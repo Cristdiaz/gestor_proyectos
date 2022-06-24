@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Gestor</h1>
+
+
+<!--Formulario para buscar proyectos de acuerdo al estado-->
+<form class="form-inline">
+      Buscar proyectos por estado: 
+    <select name="estado"  >
+                  <option value="">Estado</option>
+                  <option value="propuesta">Propuesta</option>
+                  <option value="en progreso">En progreso</option>
+                  <option value="terminado">Terminado</option>
+    </select>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+
+
+<%= link_to "New gestor", new_gestor_path %>
+
+<div id="gestors">
+  <% @gestors.each do |gestor| %>
+    <%= render gestor %>
+    <p>
+      <%= link_to "Show this gestor", gestor %>
+    </p>
+  <% end %>
+</div>
+
+
