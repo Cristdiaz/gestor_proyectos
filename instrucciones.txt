@@ -13,7 +13,7 @@ rails db:migrate
 ● El campo estado(state) refleja el estado actual(propuesta, en progreso, terminado).
 Este estado por defecto debe ser propuesta. (1 Punto)
 
-● Debo tener un vista donde pueda ver todos los proyectos.(2 Puntos)
+● Debo tener un view donde pueda ver todos los proyectos.(2 Puntos)
 
 ● En esa vista debe poder filtrar por proyecto terminado, en progreso o agendado. (2
 Puntos)

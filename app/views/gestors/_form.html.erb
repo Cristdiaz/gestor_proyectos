@@ -34,13 +34,12 @@
   <div>
    Estado del proyecto: 
     <select <%= form.text_field :estado %> >
-                  <option value="">Ingresar estado</option>
+                  <option value=""> </option>
                   <option value="propuesta">Propuesta</option>
                   <option value="en progreso">En progreso</option>
                   <option value="terminado">Terminado</option>
     </select>
     <%= form.label :estado, style: "display: block" %>
- 
   </div>
 
   <div>
